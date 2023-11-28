@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Project.Core;
+
+Counter counter = new Counter();
+Console.WriteLine($"Counter initial value: {counter.Value}");
