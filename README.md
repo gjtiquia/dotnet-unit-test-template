@@ -1,6 +1,6 @@
 # .Net Unit Test Template
 
-A minimal template for setting up a .Net project with unit tests using [NUnit](https://nunit.org/) in VSCode.
+A minimal template for setting up a .Net Console App project with unit tests using [NUnit](https://nunit.org/) in VSCode.
 
 References
 
@@ -14,24 +14,36 @@ References
 
 ### 1. Console App Setup
 
-In root directory, using VSCode Command Pallete with C# Dev Kit installed: ".Net: new Project" > "Console App".
+In root directory, using VSCode Command Pallete with C# Dev Kit installed: _.Net: New Project_ > _Console App_.
 
-Name the project "ConsoleApp"
+Name the project `ConsoleApp`.
 
-Using the terminal, `cd ConsoleApp` to go into the ConsoleApp directory.
+In the `ConsoleApp` directory, Run the following to create a `.gitignore` file.
 
-Run `dotnet new gitignore` to create a .gitignore file.
+```bash
+dotnet new gitignore
+```
 
-Run `dotnet run` to run the `Program.cs` file.
+In the `ConsoleApp` directory, Run the following command to run the `Program.cs` file.
+
+```bash
+dotnet run
+```
 
 ### 2. NUnit Setup
 
-In root directory, using VSCode Command Pallete with C# Dev Kit installed: ".Net: new Project" > "NUnit 3 Test Project".
+In root directory, using VSCode Command Pallete with C# Dev Kit installed: _.Net: New Project_ > _NUnit 3 Test Project_.
 
-Name the project "TestProject"
+Name the project `TestProject`
 
-Using the terminal, `cd TestProject` to go into the TestProject directory.
+In the `TestProject` directory, Run the following to create a `.gitignore` file.
 
-Run `dotnet new gitignore` to create a .gitignore file.
+```bash
+dotnet new gitignore
+```
 
-In the root directory, run `dotnet add TestProject/TestProject.csproj reference ConsoleApp/ConsoleApp.csproj` to reference the main project in the test project.
+In the root directory, run the following command to reference the main project `ConsoleApp` in the test project `TestProject`.
+
+```bash
+dotnet add TestProject/TestProject.csproj reference ConsoleApp/ConsoleApp.csproj
+```
