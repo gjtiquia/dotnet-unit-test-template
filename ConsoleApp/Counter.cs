@@ -4,5 +4,15 @@ namespace Project.Core
     {
         public int Value => _value;
         private int _value = 0;
+
+        public void Increment()
+        {
+            _value++;
+        }
+
+        public void Decrement()
+        {
+            _value--;
+        }
     }
 }
