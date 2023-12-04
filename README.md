@@ -10,7 +10,33 @@ References
 - <https://docs.nunit.org/articles/nunit/getting-started/installation.html#im-using-visual-studio-code-as-my-development-tool>
 - <https://docs.nunit.org/articles/nunit/running-tests/Index.html>
 
+## Terminal Commands
+
+Pre-requisites: Have the .Net SDK installed on your local machine.
+
+Run [`/ConsoleApp/Program.cs`](./ConsoleApp/Program.cs)
+
+```bash
+dotnet run --project ConsoleApp
+```
+
+Run all unit tests
+
+```bash
+dotnet test
+```
+
+## Configuration
+
+`ConsoleApp` and `TestProject` can be renamed to any other new name by renaming all the files and replacing all occurences of the original names to their new names. See [this repository](https://github.com/gjtiquia/advent-of-code-2023) for an example.
+
+## Troubleshooting
+
+If you have a different .Net SDK version, change the `<TargetFramework>` field in [AdventOfCode.csproj](./AdventOfCode/AdventOfCode.csproj) and [UnitTests.csproj](./UnitTests/UnitTests.csproj) to the corresponging version that you have.
+
 ## Setup Steps
+
+The setup steps used to create this template.
 
 ### 1. Console App Setup
 
